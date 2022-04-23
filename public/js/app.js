@@ -6,7 +6,7 @@ const message_1 = document.querySelector('#message-1')
 const message_2 = document.querySelector('#message-2')
 weather.addEventListener('submit', (e) => {
     e.preventDefault();
-    const url = "http://localhost:3000/weather?city=" + encodeURIComponent(search.value)
+    const url = "/weather?city=" + encodeURIComponent(search.value)
     console.log(search.value)
     console.log(url)
     fetch(url).then((response) => {
